@@ -1,5 +1,5 @@
 .btn {
   display:inline-block; padding:12px 16px; border-radius:8px;
-  background:#ff7a00; color:#fff; text-decoration:none; font-weight:600;
+  background:#ff7a00; color:#1e1e1e; text-decoration:none; font-weight:600;
 }
 .btn:hover { filter: brightness(0.95); }

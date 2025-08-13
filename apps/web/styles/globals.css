@@ -1,0 +1,7 @@
+html,body{height:100%}
+body{margin:0;background:#e8e5e2;color:#1e1e1e;font-family:system-ui,sans-serif}
+a{color:#1e1e1e;text-decoration:none}
+
+img,video{max-width:100%;height:auto}             /* responsive media */
+.container{max-width:1200px;margin:0 auto;padding:0 16px} /* fluid edge padding */
+h1{font-size:clamp(24px,4vw,40px)}                /* scales with width */

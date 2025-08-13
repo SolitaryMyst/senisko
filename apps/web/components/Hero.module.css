@@ -1,0 +1,21 @@
+/* container center + padding */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 16px;
+}
+
+/* hero grid that adapts */
+.hero{
+  display:grid;
+  gap:16px;
+  align-items:center;
+  min-height:60vh;
+}
+@media (min-width:768px){
+  .hero{ grid-template-columns:1fr 1fr; }
+}
+
+/* optional text tweaks */
+.title{ font-size:clamp(28px,5vw,48px); margin:0 0 12px; }
+.subtitle{ opacity:.85; margin:0 0 16px; }
