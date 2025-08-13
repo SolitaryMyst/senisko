@@ -4,15 +4,14 @@ import hero from '../components/Hero.module.css';
 
 export default function Home(){
   return (
-    <div className="container">
-      <section className={styles.hero}>
+      <section className={hero.container}>
         <div>
-          <h1>Senisko</h1>
-          <p>Responsive layout demo.</p>
-          <Link href="/contact" className={styles.btn}>Contact</Link>
+          <h1>Welcome</h1>
+          <p>Layout demo.</p>
+          <Link href="/contact" className={btn.btn}>Contact</Link>
+          <Link href="/contact" className={btn.btn}>Library</Link>
         </div>
-        <img src="/hero.jpg" alt="" />
+        <img src="/hero.svg" alt="" />
       </section>
-    </div>
   );
 }

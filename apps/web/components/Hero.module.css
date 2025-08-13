@@ -9,7 +9,7 @@
 .hero{
   display:grid;
   gap:16px;
-  align-items:center;
+  align-items:left;
   min-height:60vh;
 }
 @media (min-width:768px){
@@ -17,5 +17,5 @@
 }
 
 /* optional text tweaks */
-.title{ font-size:clamp(28px,5vw,48px); margin:0 0 12px; }
+.title{ font-size:clamp(28px,5vw,48px); margin:0 0 16px; }
 .subtitle{ opacity:.85; margin:0 0 16px; }

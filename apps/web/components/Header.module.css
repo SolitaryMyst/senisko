@@ -1,0 +1,7 @@
+.bar{display:flex;align-items:center;gap:12px;padding:16px 0}
+.logo{
+  height: clamp(28px, 4vw, 56px);  /* auto-scales */
+  width: auto;
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="329.44" height="105.09" viewBox="0 0 329.44 105.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1e1e1e;
+        stroke-miterlimit: 10;
+        stroke-width: 1.02px;
+      }
+
+      .cls-2 {
+        fill: #1e1e1e;
+        font-family: AquaGrotesque, 'Aqua Grotesque';
+        font-size: 86px;
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #fe5733;
+      }
+
+      .cls-4 {
+        fill: #1e1e1e;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(-3.33 90.83)"><tspan x="0" y="0">senisk</tspan></text>
+  <circle class="cls-1" cx="287.64" cy="67.26" r="22.54"/>
+  <circle class="cls-3" cx="319.32" cy="83.91" r="6.79"/>
+  <circle class="cls-4" cx="287.64" cy="67.26" r="15.52"/>
+</svg>
