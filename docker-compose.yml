@@ -1,0 +1,41 @@
+services:
+  caddy:
+    image: caddy:latest
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [web, api]
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    env_file: ./apps/web/.env.local
+    expose: ["3000"]
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    env_file: ./apps/api/.env
+    expose: ["4000"]
+    restart: unless-stopped
+
+  mongo:                        # <— add this block
+    image: mongo:7
+    #ports: ["27017:27017"]     # dev only; remove in prod
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: frazer
+      MONGO_INITDB_ROOT_PASSWORD: Frazzle2314
+    volumes:
+      - mongo_data:/data/db
+    
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:
+  mongo_data:
