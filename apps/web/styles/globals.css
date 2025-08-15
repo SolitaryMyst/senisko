@@ -7,4 +7,4 @@ img,video{max-width:100%;height:auto}             /* responsive media */
 h1{font-size:clamp(24px,4vw,40px)}                /* scales with width */
 
 /* Scale whole site 3x */
-body { zoom: 3; }
+body { zoom: 1.2; }
